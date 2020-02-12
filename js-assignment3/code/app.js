@@ -17,3 +17,15 @@ fetchStarWars()
 document.getElementById('luke').addEventListener ('click', luke)
 document.getElementById('c3po').addEventListener ('click', c3po)
 document.getElementById('r2').addEventListener ('click', r2)
+
+
+fetch(url)
+  .then(x => x.json())
+  .then(x => {
+    addToPage
+
+  })
+
+  function addToPage() {
+    
+  }
