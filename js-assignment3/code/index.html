@@ -5,26 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JS Assignment 3 - Alex Tran</title>
   <link rel="stylesheet" type="text/css" href="./styles.css">
+  <script src="https://kit.fontawesome.com/ed8c4e86ed.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <main>
-    <header>
-      <h1>Star Wars - API</h1>
-    </header>
+  <header>
+    <i class="fab fa-jedi-order" style="font-size: 80px;color:#fff;"></i>
+    <h1>STAR WARS - API</h1>
+    <i class="fab fa-galactic-republic" style="font-size: 80px;color:#fff;"></i>
+  </header>
     
-    <button id="luke">luke</button>
-    <button id="c3po">c3po</button>
-    <button id="r2">r2</button>
-
-    <div class="container">
-      <div id="name"></div>
-      <div id="height"></div>
-      <div id="mass"></div>
-      <div id="hair_color"></div>
-    </div>
-
-
+  <main>
+    <button id="fetchPeople">People</button>
+    <button id="fetchPlanets">Planets</button>
+    <button id="fetchFilms">Films</button>
+    <button id="fetchSpecies">Species</button>
+    <button id="fetchVehicles">Vehicles</button>
+    <button id="fetchStarships">Starships</button>
   </main>
+
+  <div id="container">
+    <div id="content"></div>
+  </div>
 
   <script type="text/javascript" src='./app.js'></script>
 </body>
