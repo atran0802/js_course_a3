@@ -9,6 +9,7 @@ let randomStarship = Math.floor((Math.random() * 37) + 1)
 
 /* Event handling */
 
+/* Unable to get loading text to display inside content container */
 function addLoading() {
   const el = document.createElement('p')
   el.id = 'loading'
@@ -21,6 +22,7 @@ function removeLoading() {
   el.remove()
 }
 
+/* Unable to get error message to display instead of undefined */
 function errorMessage() {  
   name.innerText = "ERROR... You were the Chosen One! It was said you would destroy the Sith, not join them! Bring balance to the force, not leave it in darkness! - Obi-Wan Kenobi"
 }
@@ -177,6 +179,7 @@ function outputStarships(data) {  
 
 /* Buttons */
 
+/* Unable to get button to display new generated content, without refreshing page */
  document.getElementById('fetchPeople').addEventListener ('click', fetchPeople)
  document.getElementById('fetchPlanets').addEventListener ('click', fetchPlanets)
  document.getElementById('fetchFilms').addEventListener ('click', fetchFilms)
