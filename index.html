@@ -9,87 +9,85 @@
 </head>
 <body>
   <header>
-    <i class="fab fa-jedi-order" style="font-size: 80px;color:#fff;"></i>
+    <i class="fab fa-jedi-order"></i>
     <h1>STAR WARS - API</h1>
-    <i class="fab fa-galactic-republic" style="font-size: 80px;color:#fff;"></i>
+    <i class="fab fa-galactic-republic"></i>
   </header>
     
   <main>
-    <button id="fetchPeople">People</button>
-    <button id="fetchPlanets">Planets</button>
-    <button id="fetchFilms">Films</button>
-    <button id="fetchSpecies">Species</button>
-    <button id="fetchVehicles">Vehicles</button>
-    <button id="fetchStarships">Starships</button>
-  </main>
-
-  <section>
-    <div id="container">
-      <div id="content"></div>
-        <i class="fas fa-user" style="font-size: 50px;color:#555;"></i>
+    <section>
+      <button id="fetchPeople">People</button>
+      <div class="container">
+        <i class="fas fa-user"></i>
         <h2 id="name"></h2>
         <p id="height"></p>
         <p id="mass"></p>
         <p id="birthYear"></p>
         <p id="gender"></p>
       </div>
-    </div>
+    </section>  
 
-    <div id="container">
-      <div id="content"></div>
-        <i class="fas fa-globe-americas" style="font-size: 50px;color:#555;"></i>
+    <section>
+      <button id="fetchPlanets">Planets</button>
+      <div class="container1">
+        <i class="fas fa-globe-americas"></i>
         <h2 id="name1"></h2>
         <p id="rotationPeriod"></p>
         <p id="orbitalPeriod"></p>
         <p id="diameter"></p>
         <p id="climate"></p>
       </div>
-    </div>
+    </section>
 
-    <div id="container">
-      <div id="content"></div>
-        <i class="fas fa-film" style="font-size: 50px;color:#555;"></i>
+    <section>
+      <button id="fetchFilms">Films</button>
+      <div class="container2">
+        <i class="fas fa-film"></i>
         <h2 id="name2"></h2>
         <p id="episodeId"></p>
         <p id="director"></p>
         <p id="producer"></p>
         <p id="releaseDate"></p>
       </div>
-    </div>
+    </section>
 
-    <div id="container">
-      <div id="content"></div>
-        <i class="fas fa-otter" style="font-size: 50px;color:#555;"></i>
+    <section>
+      <button id="fetchSpecies">Species</button>
+      <div class="container3">
+        <i class="fas fa-otter"></i>
         <h2 id="name3"></h2>
         <p id="classification"></p>
         <p id="designation"></p>
         <p id="averageLifespan"></p>
         <p id="language"></p>
       </div>
-    </div>
+    </section>
 
-    <div id="container">
-      <div id="content"></div>
-        <i class="fas fa-shuttle-van" style="font-size: 50px;color:#555;"></i>
+    <section>
+      <button id="fetchVehicles">Vehicles</button>
+      <div class="container4">
+        <i class="fas fa-shuttle-van"></i>
         <h2 id="name4"></h2>
         <p id="model"></p>
         <p id="costInCredits"></p>
         <p id="cargoCapacity"></p>
         <p id="vehicleClass"></p>
       </div>
-    </div>
+    </section>
 
-    <div id="container">
-      <div id="content"></div>
-        <i class="fas fa-space-shuttle" style="font-size: 50px;color:#555;"></i>
+    <section>
+      <button id="fetchStarships">Starships</button>
+      <div class="container5">
+        <i class="fas fa-space-shuttle"></i>
         <h2 id="name5"></h2>
         <p id="model1"></p>
         <p id="costInCredits1"></p>
         <p id="length1"></p>
         <p id="hyperdriveRating"></p>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
+
   <script type="text/javascript" src='./app.js'></script>
 </body>
 </html>
