@@ -1,11 +1,3 @@
-/* Selectors */
-const container = document.querySelector('.container');
-const container1 = document.querySelector('.container1');
-const container2 = document.querySelector('.container2');
-const container3 = document.querySelector('.container3');
-const container4 = document.querySelector('.container4');
-const container5 = document.querySelector('.container5');
-
 /* Random number generator */
 let randomPerson = Math.floor((Math.random() * 88) + 1);
 let randomPlanet = Math.floor((Math.random() * 61) + 1);
@@ -16,46 +8,12 @@ let randomStarship = Math.floor((Math.random() * 37) + 1);
 
 /* Event handling */
 /* Loading */
+/* Want to have each loading text be display inside content container*/
 function addLoading() {
   const el = document.createElement('p');
   el.id = 'loading';
   el.textContent = 'Loading...';
-  container.appendChild(el);
-};
-
-function addLoading1() {
-  const el = document.createElement('p');
-  el.id = 'loading';
-  el.textContent = 'Loading...';
-  container1.appendChild(el);
-};
-
-function addLoading2() {
-  const el = document.createElement('p');
-  el.id = 'loading';
-  el.textContent = 'Loading...';
-  container2.appendChild(el);
-};
-
-function addLoading3() {
-  const el = document.createElement('p');
-  el.id = 'loading';
-  el.textContent = 'Loading...';
-  container3.appendChild(el);
-};
-
-function addLoading4() {
-  const el = document.createElement('p');
-  el.id = 'loading';
-  el.textContent = 'Loading...';
-  container4.appendChild(el);
-};
-
-function addLoading5() {
-  const el = document.createElement('p');
-  el.id = 'loading';
-  el.textContent = 'Loading...';
-  container5.appendChild(el);
+  document.body.appendChild(el);
 };
 
 /* Remove Loading */
@@ -97,7 +55,7 @@ function outputPeople(data) {  
 /* Generate planets */
 const fetchPlanets = () => {
   const planets = 'https://swapi.dev/api/planets/' + randomPlanet
-  addLoading1()
+  addLoading()
   fetch(planets)
     .then(response => response.json())
     .then(data => {
@@ -120,7 +78,7 @@ function outputPlanets(data) {  
 /* Generate films */
 const fetchFilms = () => {
   const films = 'https://swapi.dev/api/films/' + randomFilm
-  addLoading2()
+  addLoading()
   fetch(films)
     .then(response => response.json())
     .then(data => {
@@ -143,7 +101,7 @@ function outputFilms(data) {  
 /* Generate species */
 const fetchSpecies = () => {
   const species = 'https://swapi.dev/api/species/' + randomSpecies
-  addLoading3()
+  addLoading()
   fetch(species)
     .then(response => response.json())
     .then(data => {
@@ -166,7 +124,7 @@ function outputSpecies(data) {  
 /* Generate vehicles */
 const fetchVehicles = () => {
   const vehicles = 'https://swapi.dev/api/vehicles/' + randomVehicle
-  addLoading4()
+  addLoading()
   fetch(vehicles)
     .then(response => response.json())
     .then(data => {
@@ -189,7 +147,7 @@ function outputVehicles(data) {  
 /* Generate starships */
 const fetchStarships = () => {
   const starships = 'https://swapi.dev/api/starships/' + randomStarship
-  addLoading5()
+  addLoading()
   fetch(starships)
     .then(response => response.json())
     .then(data => {
